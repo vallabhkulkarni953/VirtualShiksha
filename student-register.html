@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - VirtualShiksha</title>
+    <link rel="stylesheet" href="../login-register-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration</h1>
+    </header>
+
+    <form action="/submit-registration" method="POST">
+        <!-- Student registration form fields -->
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

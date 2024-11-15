@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - VirtualShiksha</title>
+    <style>
+        /* Internal CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar a.logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .course {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .course:hover {
+            transform: translateY(-5px);
+        }
+
+        .course img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .course h3 {
+            margin: 15px 0;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .course p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .course button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .course button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar with logo -->
+    <header class="navbar">
+        <a href="index.html" class="logo">VirtualShiksha</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="read-more.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Header Section for Courses -->
+    <header>
+        <h1 style="text-align: center; padding: 20px;">Explore Our Courses</h1>
+    </header>
+
+    <!-- Courses Section -->
+    <div class="course-container">
+        <div class="course">
+            <!-- <img src="course1.jpg" alt="Course 1"> -->
+            <h3>Introduction to Python</h3>
+            <p>Learn the basics of Python programming in this beginner-friendly course.</p>
+            <button onclick="viewCourseDetails('course1')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course2.jpg" alt="Course 2"> -->
+            <h3>Web Development with HTML & CSS</h3>
+            <p>Master the fundamentals of web development using HTML and CSS.</p>
+            <button onclick="viewCourseDetails('course2')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course3.jpg" alt="Course 3"> -->
+            <h3>JavaScript for Beginners</h3>
+            <p>Understand the basics of JavaScript programming and start building interactive websites.</p>
+            <button onclick="viewCourseDetails('course3')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course4.jpg" alt="Course 4"> -->
+            <h3>Data Science with Python</h3>
+            <p>Dive into data science techniques and Python libraries like Pandas and NumPy.</p>
+            <button onclick="viewCourseDetails('course4')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course5.jpg" alt="Course 5"> -->
+            <h3>Machine Learning Fundamentals</h3>
+            <p>Explore machine learning concepts and algorithms, from theory to practical application.</p>
+            <button onclick="viewCourseDetails('course5')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course6.jpg" alt="Course 6"> -->
+            <h3>Introduction to SQL</h3>
+            <p>Learn SQL basics to manage and manipulate databases effectively.</p>
+            <button onclick="viewCourseDetails('course6')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course7.jpg" alt="Course 7"> -->
+            <h3>Advanced CSS & Sass</h3>
+            <p>Take your CSS skills to the next level with advanced concepts and pre-processors.</p>
+            <button onclick="viewCourseDetails('course7')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course8.jpg" alt="Course 8"> -->
+            <h3>React for Beginners</h3>
+            <p>Build dynamic web applications using the React JavaScript library.</p>
+            <button onclick="viewCourseDetails('course8')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course9.jpg" alt="Course 9"> -->
+            <h3>Python for Data Analysis</h3>
+            <p>Analyze and visualize data with Python using popular libraries like Matplotlib.</p>
+            <button onclick="viewCourseDetails('course9')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course10.jpg" alt="Course 10"> -->
+            <h3>Introduction to AI</h3>
+            <p>Get started with Artificial Intelligence and learn its core concepts and applications.</p>
+            <button onclick="viewCourseDetails('course10')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course11.jpg" alt="Course 11"> -->
+            <h3>Cybersecurity Basics</h3>
+            <p>Understand cybersecurity principles and learn how to protect information.</p>
+            <button onclick="viewCourseDetails('course11')">View Details</button>
+        </div>
+        <div class="course">
+            <!-- <img src="course12.jpg" alt="Course 12"> -->
+            <h3>Mobile App Development</h3>
+            <p>Create your first mobile application using popular frameworks like Flutter.</p>
+            <button onclick="viewCourseDetails('course12')">View Details</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle the "View Details" button click
+        function viewCourseDetails(courseId) {
+            alert("You clicked on " + courseId + ". You can add further course details functionality here.");
+        }
+    </script>
+</body>
+
+</html>

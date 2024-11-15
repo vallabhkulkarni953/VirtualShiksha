@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualShiksha - Best Online Learning System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Bar with Contact Info -->
+    <div class="top-bar">
+        <span>Email: virtualshiksha@gmail.com | Phone: 001-1234-88888</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="VirtualShiksha Logo">
+            <h1>VirtualShiksha</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about" id="about-link">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Best Online Learning Platform</h2>
+            <p>GEAR UP- SHIKSHA CAN BE NOW ACQUIRED ONLINE TOO!!!</p>
+            <button class="read-more-btn">Read More</button>
+        </div>
+    </section>
+
+    <!-- Login/Register Section for Teachers and Students -->
+    <section class="login-register">
+        <div class="user-type">
+            <h3>For Students</h3>
+            <button class="register-btn" data-user="student">Register as Student</button>
+            <button class="login-btn" data-user="student">Login as Student</button>
+        </div>
+        <div class="user-type">
+            <h3>For Teachers</h3>
+            <button class="register-btn" data-user="teacher">Register as Teacher</button>
+            <button class="login-btn" data-user="teacher">Login as Teacher</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <!-- <img src="learn.png" alt="Learn From Experts"> -->
+            <h3>Learn From The Experts</h3>
+            <p>Gain knowledge from industry experts with years of experience.</p>
+        </div>
+        <div class="feature">
+            <!-- <img src="library.png" alt="Book Library & Store"> -->
+            <h3>Book Library & Store</h3>
+            <p>Access a vast library and book store at your convenience.</p>
+        </div>
+        <div class="feature">
+            <!-- <img src="online-course.png" alt="Best Course Online"> -->
+            <h3>Best Course Online</h3>
+            <p>Explore courses crafted by the best educators and industry experts.</p>
+        </div>
+        <div class="feature">
+            <!-- <img src="leaders.png" alt="Best Industry Leaders"> -->
+            <h3>Best Industry Leaders</h3>
+            <p>Learn from leaders and top professionals in the industry.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Modal for Registration/Login Forms -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <div id="register-student-form" class="modal-form">
+                <h2>Register as Student</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="login-student-form" class="modal-form">
+                <h2>Login as Student</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="register-teacher-form" class="modal-form">
+                <h2>Register as Teacher</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="login-teacher-form" class="modal-form">
+                <h2>Login as Teacher</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

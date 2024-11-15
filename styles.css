@@ -1,0 +1,298 @@
+/* Global Styles */
+body, h1, h2, h3, p, a, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color:burlywood;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.navbar nav a {
+    color: #333;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar nav a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.read-more-btn {
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.read-more-btn:hover {
+    background-color: #0077b6;
+}
+
+/* Login/Register Section */
+.login-register {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.user-type {
+    max-width: 200px;
+}
+
+.user-type h3 {
+    font-size: 1.2rem;
+    color: #0077b6;
+    margin-bottom: 1rem;
+}
+
+.register-btn, .login-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.register-btn:hover, .login-btn:hover {
+    background-color: #005f8d;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.feature {
+    text-align: center;
+    width: 20%;
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #0077b6;
+    margin-top: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    background-color: burlywood;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #005f8d;
+}
+
+/* Modal for Forms */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.modal-form {
+    display: none;
+}
+
+.modal-form h2 {
+    margin-bottom: 1rem;
+}
+
+.modal-form input, .modal-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Close Button */
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* Logo Styling */
+header .logo img {
+    width: 150px;  /* Adjust width to fit the desired logo size */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%;  /* Ensure the logo doesn't overflow its container */
+}
+
+/* Styles for Read More page */
+
+header h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2, .content h3 {
+    color: #007bff;
+}
+
+.content p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.content ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.content ul li {
+    list-style-type: disc;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+    
+.back-button:hover {
+    background-color: #007bff;
+}
